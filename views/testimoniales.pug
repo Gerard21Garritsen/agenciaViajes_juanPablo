@@ -1,0 +1,36 @@
+//- This is the client's comments web page section
+extends ./Layout/index
+
+block contenido 
+    main.container.mt-5 
+        .row
+            h1 #{pagina}
+
+                blockquote.text-center Lee sobre nuestros clientes y sus experienciencias
+                
+                include ./Layout/bloque_testimoniales
+
+            .col-md-12
+
+                h2.d-block.w-100.text-center Agrega un Testimonial
+
+                //- show error messages if exist
+                if(mensajes)
+                    each error in mensajes
+                        .alert.col.alert-danger.text-center #{error.mensaje}
+
+            .row.justify-content-center.col 
+                .col-md-8
+                    form(action="/testimoniales", method="POST")
+                        .form-group
+                            label(for="nombre") Nombre 
+                            input#nombre(type="text", placeholder="tu nombre", name="nombre", value=nombre, class="form-control")
+                        .form-group 
+                            label(for="correo") Email
+                            input#correo(type="text", placeholder="tu email", name="email", value=email, class="form-control")
+                        .form-group 
+                            label(for="mensaje") Testimonial 
+                            textarea#mensaje(placeholder="tu mensaje", name="mensaje", class="form-control", rows=3)=mensaje  
+
+                        input.btn.btn-success.btn-block(type="submit", value="Enviar respuesta")
+

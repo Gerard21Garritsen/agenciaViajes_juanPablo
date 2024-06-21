@@ -1,0 +1,49 @@
+//- This is the us web page section
+extends ./Layout/index
+
+block contenido
+     main.container.mt-5 
+        .row
+            .col-md-5 
+                img(src="/img/nosotros.jpg", alt="nosotros imagen", class="img-fluid")
+            .col-md-7
+                h1 #{pagina}
+                
+                blockquote  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas facilisis sed velit vel iaculis.
+                    Vestibulum erat ante, mollis a feugiat id, bibendum sed tellus. Aliquam ornare nisi consequat,
+                    molestie enim vel, convallis urna. Duis vehicula vitae ligula vitae porta. Morbi venenatis tincidunt
+                    eros a luctus. Donec tristique sapien sed libero interdum, vel pharetra augue sollicitudin.
+
+                p Donec a aliquam est, in volutpat nisi. Cras scelerisque diam nec mollis ullamcorper.
+                    Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+                    Nunc id blandit nisl, non aliquam enim. Aliquam maximus nisi ante, sed bibendum leo cursus ultricies.
+                    Interdum et malesuada fames ac ante ipsum primis in faucibus.
+                    Duis vitae magna non nisi tempor commodo eu ac nulla.
+                    Suspendisse finibus maximus elit commodo pellentesque. Sed et auctor tortor, id dapibus lectus.
+
+                p Fusce dictum sodales accumsan. Nulla quis turpis id nunc laoreet pharetra sit amet in nunc.
+                    Nulla quis rutrum libero. Maecenas aliquet porta eros eu molestie.
+                    Duis fermentum, velit vitae venenatis vulputate, lectus augue congue velit, sit amet interdum nunc tortor ac nulla.
+                    Nulla gravida egestas nisi, in dapibus nibh finibus id. Morbi vel turpis a turpis luctus iaculis.
+                    Phasellus eget tristique neque. Nunc eu diam vestibulum, hendrerit nulla faucibus, semper nulla.
+
+        .listado-iconos
+            .container.mt-5.py-5.text-center
+                .row 
+                    .col-md-4
+                        img(src="/img/icono_seguridad.svg", alt="icono seguridad", class="img-fluid mb-4")
+                        h2.mb-4 Seguridad
+                        p Vestibulum finibus, enim vel posuere eleifend, arcu turpis imperdiet metus, eu tincidunt nisl eros eu est.
+                            Donec ac metus commodo, vehicula mauris et, tempor mi. Suspendisse in augue nibh.
+                            Interdum et malesuada fames ac ante ipsum primis in faucibus.
+                    .col-md-4
+                        img(src="/img/icono_destinos.svg", alt="icono destinos", class="img-fluid mb-4")
+                        h2.mb-4 Mejores Destinos
+                        p Duis fermentum, velit vitae venenatis vulputate, lectus augue congue velit, sit amet interdum nunc tortor ac nulla.
+                            Nulla gravida egestas nisi, in dapibus nibh finibus id. Morbi vel turpis a turpis luctus iaculis.
+                    
+                    .col-md-4
+                        img(src="/img/icono_precios.svg", alt="icono precios", class="img-fluid mb-4")
+                        h2.mb-4 Mejores Precios
+                        p molestie enim vel, convallis urna. Duis vehicula vitae ligula vitae porta. Morbi venenatis tincidunt
+                            eros a luctus. Donec tristique sapien sed libero interdum, vel pharetra augue sollicitudin.
